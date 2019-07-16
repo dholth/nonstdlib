@@ -1,0 +1,18 @@
+[tool]
+
+[tool.enscons]
+name = "nonstdlib"
+version = "3.7"
+description = "Repackaged standard library modules."
+classifiers = []
+author = "Daniel Holth"
+author_email = "dholth@gmail.com"
+url = "https://github.com/dholth/nonstdlib"
+license = "PSF license"
+install_requires = []
+description_file = "README.rst"
+src_root = ""
+
+[build-system]
+requires = ["pytoml>=0.1", "enscons>=0.12"]
+build-backend = "enscons.api"
