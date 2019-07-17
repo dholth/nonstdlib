@@ -14,5 +14,5 @@ description_file = "README.rst"
 src_root = ""
 
 [build-system]
-requires = ["pytoml>=0.1", "enscons>=0.12"]
+requires = ["pytoml>=0.1", "enscons>=0.20"]
 build-backend = "enscons.api"
