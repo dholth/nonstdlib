@@ -1,6 +1,5 @@
 import pytoml as toml
 import enscons
-import enscons_patch
 import sys
 
 import manifests
@@ -25,9 +24,6 @@ packages = manifests.get_manifests()
 for package in packages:
     if package.startswith("_"):
         continue
-    # TODO one Environment should be better at multiple wheels...
-    # .Whl or .WhlFile could set up the targets that generate metadata,
-    # instead of Environment.
     env = make_environment(package)
     py_source = packages[package]
     purelib = env.Whl("purelib", py_source, root="cpython/Lib")

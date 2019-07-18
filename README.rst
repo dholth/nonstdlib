@@ -3,6 +3,14 @@ nonstdlib
 
 Isn't it strange that a lot of Python libraries are bundled with a particular version of the interpreter, instead of packaged? The nonstdlib package imagines a mirror universe where that is not the case.
 
+Build
+-----
+
+- Check out the repository and the cpython git submodule
+- Install enscons >= 0.20, pytoml, SCons. Tested in a Python 3.6+ environment or pypy.
+- Run scons
+- Enjoy wheels in dist/
+
 Get Involved
 ------------
 
